@@ -16,7 +16,12 @@ let scienceButton = document.querySelector(".science-button");
 
 englishButton.addEventListener("click", function() {
     let englishInput = document.querySelector(".english").value;
-
+console.log(englishInput);
+    let englishMessage = document.querySelector(".english-message");
+    if (englishInput === "Mon"){
+    englishMessage.innerHTML = "Correct!";
+    } else {
+    englishMessage.innerHTML = "Wrong";}
     // 2. Write an if-else conditional statement.
     //  - Check if the value of the variable englishInput is correct.
     //  - The answer should be "Mon".
@@ -27,7 +32,7 @@ englishButton.addEventListener("click", function() {
 
 
 });
-
+  
 
 // CODE SOLO
 
